@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html>
+	
+	<head>
+		
+		<title>Amazon</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width = device-width, initial-scale = 1.0">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+		<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto" rel="stylesheet">
+		<link href="css/main.css" rel="stylesheet">
+
+	
+	</head>
+
+	<body>
+		
+		<nav id="side-bar-nav">
+			<div id="profile-pic-and-cart">
+				<img src="img/profile-pic.jpg" class="img-responsive text-center" alt="profile picture">
+				<h4>Casey Brinegar</h4>
+				<button type="button" class="btn btn-primary"><span class="fa fa-shopping-cart fa-lg" aria-hidden="true"></span><span class="shoping-cart-button"><span> 4</span> items in cart</span></button>
+			</div>
+			<ul>
+				<div id="search-bar1">
+  					<input type="text" name="searchBar" placeholder="Search Amazon...">
+  					<span class="fa fa-search" aria-hidden="true"></span>
+  				</div>
+				<li><span class="fa fa-home" aria-hidden="true"></span>Home</li>
+				<li><span class="fa fa-list-ol" aria-hidden="true"></span>Wishlists</li>
+				<li><span class="fa fa-gift" aria-hidden="true"></span>Orders</li>
+			</ul>
+			<p class="text-center">Shop By Department</p>
+			<ul id="department-products">
+				<li><span class="fa fa-caret-up" aria-hidden="true"></span>Books & Audible</li>
+				<li><span class="fa fa-caret-up" aria-hidden="true"></span>Movies & More</li>
+				<li><span class="fa fa-caret-up" aria-hidden="true"></span>Electronics</li>
+				<li><span class="fa fa-caret-up" aria-hidden="true"></span>Beauty & Health</li>
+				<li><span class="fa fa-caret-up" aria-hidden="true"></span>Groceries</li>
+				<li><span class="fa fa-caret-up" aria-hidden="true"></span>Toy's & Kids</li>
+				<li><span class="fa fa-caret-up" aria-hidden="true"></span>Sports & Outdoors</li>	
+			</ul>
+		</nav>
+		
+		<div class="container-fluid header-container">
+			<header>
+				<div class="hamburger-icon">
+					<i class="fa fa-bars" aria-hidden="true"></i>
+				</div>
+  				<img src="img/Amazon-logo.png">
+  				<div id="search-bar">
+  					<input type="text" name="searchBar" placeholder="Search Amazon...">
+  					<span class="fa fa-search" aria-hidden="true"></span>
+  				</div>
+  				<div class="float-right">
+ 					<div id="users-info">
+ 						<p id="arrow-click">Casey <span class="fa fa-caret-down" aria-hidden="true"></span>
+ 						<ul id="user-dropdown" class="hide">
+ 							<li>Shopping Cart</li>
+ 							<li>Change Password</li>
+ 							<li>Update Billing Info</li>
+ 						</ul>
+ 						</p>
+ 					</div>
+ 					<p class="user-info-p"><span class="fa fa-globe" aria-hidden="true"></span><span class="fa fa-cog" aria-hidden="true"></span><p>
+  				</div>
+			</header>
+		</div>
+
+		<div id="let-user-know-prefrences">
+			<p class="h4">Updating new preferences...</p>
+		</div>
+	
+
+		<div class="row hide" id="amazing-hot-deals-dropdown">
+			<div class="col-xs-6 amazing-hot-deals-buttons">
+				<button id="cancel-amazing-hot-deals"><i class="fa fa-ban" aria-hidden="true"></i> Cancel</button>
+			</div>
+			<div class="col-xs-6 text-right amazing-hot-deals-buttons">
+				<button id="save-preferences-button" class="background-blue"><i class="fa fa-clock-o" aria-hidden="true"></i> Save Preferences</button>
+			</div>
+			<div class="col-xs-10 col-xs-offset-1 text-center" id="preferences-options">
+				<p class="h4 smaller-font-response">Show me: <span class="show-me active-show-me">electronics</span>, <span class="show-me">movies</span>, <span class="show-me">power tools</span>, <span class="show-me">home decore</span>,
+				<span class="show-me">furniture</span>, <span class="show-me">& sports products</span> <span class="glyphicon glyphicon-plus-sign" aria-hidden="true"></span></p>
+			</div>
+		</div>
+		
+		<div class="row position-realitive hide" id="slider">
+			<div id="slider-border" class="col-xs-10 col-xs-offset-1 position-realitive">
+
+				<div id="slider-circle-selector">
+					<div></div>
+				</div>
+				<div class="slider-options position-absolute" id="slider-never">
+					<p class="slider-words position-absolute" id="never-word">Never</p>
+				</div>
+				<div class="slider-options position-absolute" id="slider-rarely">
+					<p class="slider-words position-absolute" id="rarely-word">Rarely</p>
+				</div>
+				<div class="slider-options position-absolute" id="slider-sometimes">
+					<p class="slider-words position-absolute" id="sometimes-word">Sometimes</p>
+				</div>
+				<div class="slider-options position-absolute" id="slider-often">
+					<p class="slider-words position-absolute" id="often-word">Often</p>
+				</div>
+				<div class="slider-options position-absolute" id="slider-always">
+					<p class="slider-words position-absolute" id="always-word">Always</p>
+				</div>	
+			</div>
+		</div>
+		
+		<div class="container-fluid background-grey">
+		<section class="main-content">
+			<div class="row position-realitive">
+				<div class="col-xs-12 col-md-12 col-lg-6 margin-left-negative">
+					<div id="recently-viewed" class="background-white">
+						<div id="recently-viewed-buttons">
+							<div class="row margin-sides-none text-center">
+								<div class="col-xs-4">
+									<p class="recently-viewed-active">Recently Viewed</p>
+								</div>
+								<div class="col-xs-4">
+									<p>Today's Deals</p>
+								</div>
+								<div class="col-xs-4">
+									<p>Gift Cards</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div id="reccomendations" class="background-white">
+						<div class="row">
+							<div class="col-xs-10 margin-sides-none">
+								<p><span>Improve Your</span> <a>Reccomendations</a><br>
+								<span class="h4">How often do you buy items like this?</span></p>
+							</div>
+						</div>
+						<div class="row margin-top-sm position-realitive">
+							<div class="col-xs-12">
+								<img src="img/watch.jpeg" class="img-responsive watch-img" alt="profile picture">
+								<div class="col-xs-6 position-absolute reccomendation-products">
+									<p>Vortex Brand Watches</p>
+								</div>
+								<div class="col-xs-3 position-absolute reccomendation-products-prize">
+									<p>$49.00</p>
+								</div>
+							</div>
+						</div>
+						<div class="row margin-sides-none">
+							<div class="col-xs-12" id="reccomendations-buttons">
+								<div class="col-xs-4">
+									<button type="button">Rarely</button>
+								</div>
+								<div class="col-xs-4">
+									<button type="button">Sometimes</button>
+								</div>
+								<div class="col-xs-4">
+									<button type="button">Often</button>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="row margin-sides-none side-bar-products background-white">
+						<div class="col-xs-12">
+							<div class="row side-bar-products-margin">
+								<div class="col-xs-3">
+									<img src="img/coffee.jpeg" class="img-responsive">
+								</div>
+								<div class="col-xs-9">
+									<p class="h4">Kuerig Coffee Maker<br>
+									<span class="side-bar-products-price">$200</span><br>
+									<span class="side-bar-products-ratings"><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star-o" aria-hidden="true"></i></span></p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="row margin-sides-none side-bar-products background-white">
+						<div class="col-xs-12">
+							<div class="row side-bar-products-margin">
+								<div class="col-xs-3">
+									<img src="img/purse.jpeg" class="img-responsive">
+								</div>
+								<div class="col-xs-9">
+									<p class="h4">Fold Top Messanger<br>
+									<span class="side-bar-products-price">$128.95</span><br>
+									<span class="side-bar-products-ratings"><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star-o" aria-hidden="true"></i></span></p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="row margin-sides-none side-bar-products background-white">
+						<div class="col-xs-12">
+							<div class="row side-bar-products-margin">
+								<div class="col-xs-3">
+									<img src="img/phone-wallet.jpeg" class="img-responsive">
+								</div>
+								<div class="col-xs-9">
+									<p class="h4">Mujio Phone Wallet<br>
+									<span class="side-bar-products-price">$45.00</span><br>
+									<span class="side-bar-products-ratings"><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star-o" aria-hidden="true"></i>
+									<i class="fa fa-star-o" aria-hidden="true"></i> <i class="fa fa-star-o" aria-hidden="true"></i></span></p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div id="hotdeals">
+					<i class="fa fa-clock-o" aria-hidden="true"></i>
+					<p id="amazon-hotdeals">Amazon Hot Deals</p>
+				</div>
+				<figure class="col-md-12 col-lg-6 clearfix">
+					<div class="row">
+						<div class="col-xs-6 col-sm-4 col-md-4 col-lg-6 padding-left-none padding-right-md">
+							<figcaption>
+								<img src="img/clothes 2.jpeg" class="img-responsive" alt="profile picture">
+								<div class="caption">
+								</div>
+								<div class="caption-para">
+									<p>I love Toes</p>
+									<p><span class="prize">$89.00</span><span class="rating-star">5<span class="fa fa-star" aria-hidden="true"></span></span></p>
+								</div>
+							</figcaption>
+						</div>
+						<div class="col-xs-6 col-sm-4 col-md-4 col-lg-6 padding-left-none padding-right-md">
+							<figcaption>
+								<img src="img/clothes 2.jpeg" class="img-responsive"  alt="profile picture">
+								<div class="caption">
+								</div>
+								<div class="caption-para">
+									<p>I love Toes</p>
+									<p><span class="prize">$89.00</span><span class="rating-star">5<span class="fa fa-star" aria-hidden="true"></span></span></p>
+								</div>
+							</figcaption>
+						</div>
+						<div class="col-xs-6 col-xs-12 col-sm-4 col-md-4 col-lg-6 padding-left-none padding-right-md">
+							<figcaption>
+								<img src="img/clothes 2.jpeg" class="img-responsive"  alt="profile picture">
+								<div class="caption">
+								</div>
+								<div class="caption-para">
+									<p>I love Toes</p>
+									<p><span class="prize">$89.00</span><span class="rating-star">5<span class="fa fa-star" aria-hidden="true"></span></span></p>
+								</div>
+							</figcaption>
+						</div>
+					</div>
+				</figure>
+			</div>
+		</section>
+		</div>
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+		<script src="js/main.js"></script>
+	</body>
+</html>
